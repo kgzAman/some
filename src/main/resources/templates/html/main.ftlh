@@ -29,6 +29,8 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        <#if user??>
+        <#else>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
                 <a class="nav-link" href="/login"></a>
@@ -39,6 +41,7 @@
                 <button type="button" class="btn btn-link">Регистрация</button>
             </li>
         </ul>
+        </#if>
     </div>
 </nav>
 <div class="list">
